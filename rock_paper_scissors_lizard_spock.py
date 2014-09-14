@@ -20,11 +20,8 @@ And as it always has been
 Rock crushes scissors
 '''
 
-def result(shape1, shape2):
-    return (shape1 - shape2) % 5
-
 def winner(shape1, shape2):
-    res = result(shape1, shape2)
+    res = (shape1 - shape2) % 5
     if res > 2:
         return shape2
     elif res > 0:
